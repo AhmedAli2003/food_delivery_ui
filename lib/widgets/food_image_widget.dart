@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 
 class FoodImageWidget extends StatelessWidget {
   final String imageUrl;
+  final double height;
+  final double width;
   const FoodImageWidget({
     super.key,
     required this.imageUrl,
+    required this.height,
+    required this.width,
   });
 
   @override
@@ -13,8 +17,8 @@ class FoodImageWidget extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       child: Image.asset(
         imageUrl,
-        height: 100,
-        width: 132,
+        height: height,
+        width: width,
         fit: BoxFit.cover,
       ),
     );

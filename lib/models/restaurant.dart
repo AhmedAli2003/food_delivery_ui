@@ -42,21 +42,12 @@ class Restaurant {
   @override
   bool operator ==(covariant Restaurant other) {
     if (identical(this, other)) return true;
-  
-    return 
-      other.imageUrl == imageUrl &&
-      other.name == name &&
-      other.address == address &&
-      other.rating == rating &&
-      listEquals(other.menu, menu);
+
+    return other.imageUrl == imageUrl && other.name == name && other.address == address && other.rating == rating && listEquals(other.menu, menu);
   }
 
   @override
   int get hashCode {
-    return imageUrl.hashCode ^
-      name.hashCode ^
-      address.hashCode ^
-      rating.hashCode ^
-      menu.hashCode;
+    return imageUrl.hashCode ^ name.hashCode ^ address.hashCode ^ rating.hashCode ^ menu.hashCode;
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_ui/constants/app_texts.dart';
 import 'package:food_delivery_ui/data/data.dart';
 import 'package:food_delivery_ui/widgets/cart_button_action.dart';
+import 'package:food_delivery_ui/widgets/nearby_restaurants_list_view.dart';
 import 'package:food_delivery_ui/widgets/recent_orders_list_view.dart';
 import 'package:food_delivery_ui/widgets/search_text_field.dart';
 import 'package:food_delivery_ui/widgets/section_text_title.dart';
@@ -43,15 +44,19 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SearchTextField(searchController: searchController),
             const SectionTextTitle(title: AppTexts.recentOrdersTitle),
             RecentOrdersListView(orders: currentUser.orders),
+            const SectionTextTitle(title: AppTexts.nearbyRestaurantsTitle),
+            NearbyRestaurantsListView(restaurants: restaurants),
           ],
         ),
       ),
     );
   }
 }
+

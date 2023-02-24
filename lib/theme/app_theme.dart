@@ -22,6 +22,10 @@ final ThemeData theme = ThemeData(
       color: Colors.grey,
       fontSize: 14,
     ),
+    labelSmall: TextStyle(
+      fontSize: 14,
+      color: Colors.grey,
+    ),
     bodyMedium: TextStyle(
       color: Colors.black,
       fontSize: 16,
