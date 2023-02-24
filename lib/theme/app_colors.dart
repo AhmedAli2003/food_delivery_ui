@@ -28,4 +28,5 @@ class AppColors {
   static const Color gradientColor2 = Color.fromRGBO(0, 0, 0, 0.3);
   static const Color gradientColor3 = Color.fromRGBO(0, 0, 0, 0.25);
   static const Color gradientColor4 = Color.fromRGBO(0, 0, 0, 0.2);
+  static const Color priceColor = Color.fromRGBO(56, 142, 60, 1);
 }

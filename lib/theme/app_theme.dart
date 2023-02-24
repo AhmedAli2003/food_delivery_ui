@@ -18,6 +18,11 @@ final ThemeData theme = ThemeData(
       fontSize: 16,
       fontWeight: FontWeight.w500,
     ),
+    displayLarge: TextStyle(
+      color: Colors.black,
+      fontSize: 20,
+      fontWeight: FontWeight.w600,
+    ),
     bodySmall: TextStyle(
       color: Colors.grey,
       fontSize: 14,
@@ -38,6 +43,12 @@ final ThemeData theme = ThemeData(
       fontSize: 24.0,
       fontWeight: FontWeight.w600,
       letterSpacing: 1.2,
+    ),
+    titleLarge: TextStyle(
+      color: Colors.white,
+      fontSize: 24.0,
+      fontWeight: FontWeight.bold,
+      letterSpacing: 2.0,
     ),
   ),
   splashColor: AppColors.transparent,

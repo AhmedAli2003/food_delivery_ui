@@ -7,4 +7,7 @@ mixin AppTexts {
   static const String reviewsButton = 'Reviews';
   static const String contactButton = 'Contact';
   static const String menu = 'Menu';
+  static const String estimatedDeliveryTime = 'Estimated Delivery Time';
+  static const String totalCost = 'Total Cost';
+  static const String checkout = 'CHECKOUT';
 }
