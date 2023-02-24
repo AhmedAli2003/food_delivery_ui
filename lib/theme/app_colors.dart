@@ -23,4 +23,8 @@ class AppColors {
   static const Color arrowIconColor = Colors.white;
   static const Color selectedFavoriteIconColor = Colors.red;
   static const Color unselectedFavoriteIconColor = Colors.white;
+  static const Color gradientColor1 = Color.fromRGBO(0, 0, 0, 0.4);
+  static const Color gradientColor2 = Color.fromRGBO(0, 0, 0, 0.3);
+  static const Color gradientColor3 = Color.fromRGBO(0, 0, 0, 0.25);
+  static const Color gradientColor4 = Color.fromRGBO(0, 0, 0, 0.2);
 }

@@ -6,4 +6,5 @@ mixin AppTexts {
   static const String nearbyRestaurantsTitle = 'Nearby Restaurants';
   static const String reviewsButton = 'Reviews';
   static const String contactButton = 'Contact';
+  static const String menu = 'Menu';
 }

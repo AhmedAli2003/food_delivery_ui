@@ -3,6 +3,7 @@ import 'package:food_delivery_ui/constants/app_texts.dart';
 import 'package:food_delivery_ui/models/restaurant.dart';
 import 'package:food_delivery_ui/widgets/action_chip_custom_button.dart';
 import 'package:food_delivery_ui/widgets/animated_row_of_icons.dart';
+import 'package:food_delivery_ui/widgets/food_grid_item.dart';
 import 'package:food_delivery_ui/widgets/rating_stars_widget.dart';
 
 class RestaurantPage extends StatelessWidget {
@@ -80,6 +81,31 @@ class RestaurantPage extends StatelessWidget {
                   text: AppTexts.contactButton,
                 ),
               ],
+            ),
+          ),
+          const SizedBox(height: 10),
+          Center(
+            child: Text(
+              AppTexts.menu,
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+          ),
+          const SizedBox(height: 10),
+          Expanded(
+            child: GridView.builder(
+              physics: const BouncingScrollPhysics(),
+              itemCount: restaurant.menu.length,
+              padding: const EdgeInsets.all(12.0),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+              ),
+              itemBuilder: (context, index) {
+                final food = restaurant.menu[index];
+                final sideLength = size.width / 2;
+                return FoodGridItem(sideLength: sideLength, food: food);
+              },
             ),
           ),
         ],
