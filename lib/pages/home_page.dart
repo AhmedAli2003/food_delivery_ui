@@ -52,6 +52,7 @@ class _HomePageState extends State<HomePage> {
             const SectionTextTitle(title: AppTexts.recentOrdersTitle),
             RecentOrdersListView(orders: currentUser.orders),
             const SectionTextTitle(title: AppTexts.nearbyRestaurantsTitle),
+            const SizedBox(height: 10),
             NearbyRestaurantsListView(restaurants: restaurants),
           ],
         ),
@@ -59,4 +60,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
