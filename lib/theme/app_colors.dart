@@ -20,6 +20,7 @@ class AppColors {
   );
   static const Color transparent = Colors.transparent;
   static const Color greyBorderColor = Color.fromRGBO(238, 238, 238, 1);
+  static const Color greyDividerColor = Colors.grey;
   static const Color arrowIconColor = Colors.white;
   static const Color selectedFavoriteIconColor = Colors.red;
   static const Color unselectedFavoriteIconColor = Colors.white;
