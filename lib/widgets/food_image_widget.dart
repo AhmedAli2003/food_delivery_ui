@@ -15,11 +15,14 @@ class FoodImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(15),
-      child: Image.asset(
-        imageUrl,
-        height: height,
-        width: width,
-        fit: BoxFit.cover,
+      child: Hero(
+        tag: imageUrl,
+        child: Image.asset(
+          imageUrl,
+          height: height,
+          width: width,
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }
